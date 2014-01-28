@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pushNotify">
+    <head>
+        <title>My HTML File</title>
+        <link rel="stylesheet" href="app_css/app.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <script src="angular/angular.js"></script>
+        <script src="angular/app.js"></script>
+        <script src="angular/controllers.js"></script>
+
+    </head>
+    <body>
+       <div class="container-fluid" ng-controller="pushCtrl">
+           <div class="row-fluid">
+               <div class="left">
+                   <ul>
+                       <li><a href="#" style="color: black">Email</a></li>
+                       <li><a href="#" style="color: black">In-App push notification</a></li>
+                   </ul>
+               </div>
+               <div class="pull-left">
+                   <form id="recipient">recipient <span id="r_input"><input type="text"
+                   placeholder="name list break by semicolon"></span></form>
+                   <br>
+                   <form id="badge">badge<input type="number" min="0" max="10" step="1" value="3"
+                   id="b_input"></form>
+                   <br>
+                   <form id="custom_field" ng-repeat="field in fields">custom field
+                   <input type="text" placeholder="key" ng-model="field.name" name="" id="c_input1">
+                   <input type="text" placeholder="field" id="c_input2">
+                   <button id="plus_sign" type="button" ng-click="addNewField()" ng-show="showAddButton(field)">
+                           <img src="bootstrap/img/glyphicons/png/glyphicons_432_plus.png"></button></form>
+                   <br>
+                   <button id="send">Send</button>
+               </div>
+           </div>
+       </div>
+
+
+
+    </body>
+</html>
