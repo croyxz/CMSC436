@@ -3,12 +3,9 @@
 <head>
     <title>My HTML File</title>
     <link rel="stylesheet" href="app_css/app.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <script src="angular/angular.js"></script>
     <script src="angular/app.js"></script>
-<!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script> -->
-    <!-- <script src="angular/angular.min.js"></script> -->
-
+    <script src="angular/controllers.js"></script>
 </head>
 <body>
 <div class="container-fluid">
@@ -21,7 +18,7 @@
 
         </div>
         <div class="pull-left">
-            <form id="recipient" ng-submit="sendForm()" ng-controller="submitInfo">
+            <form id="recipient" ng-controller="InfoTools" ng-submit="postForm()">
                 recipient <span id="r_input"><input type="text"
                                                     placeholder="name list break by semicolon" name="recipient"
                                                     ng-model="formData.recipient"/></span>
@@ -30,16 +27,15 @@
                             name="badge" placeholder="3" ng-model="formData.badge"/>
                 <br/>
                 custom field
-                <input type="text" placeholder="key" name="key" id="c_input1" ng-model="formData.key"/>
+                <input type="text" placeholder="key" name="k" id="c_input1" ng-model="formData.k"/>
                 <input type="text" placeholder="field" name="field" id="c_input2" ng-model="formData.field"/>
-                <button id="plus_sign" type="button">
-                    <img src="bootstrap/img/glyphicons/png/glyphicons_432_plus.png"></button>
+                <button id="plus_sign" type="button">Plus</button>
                 <br/>
-                <button type="submit" id="send" >Send</button>
+                <button type="submit" id="send">Send</button>
             </form>
         </div>
     </div>
 </div>
 
-
 </body>
+</html>
