@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pushNotify">
+<head>
+    <title>My HTML File</title>
+    <link rel="stylesheet" href="css/app.css">
+    <script src="lib/angular.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="left">
+            <ul>
+                <li><a href="#" style="color: black">Email</a></li>
+                <li><a href="#" style="color: black">In-App push notification</a></li>
+            </ul>
+
+        </div>
+        <div class="pull-left">
+            <form id="recipient" ng-controller="InfoTools" ng-submit="postForm()">
+                recipient <span id="r_input"><input type="text"
+                                                    placeholder="name list break by semicolon" name="recipient"
+                                                    ng-model="formData.recipient"/></span>
+                <br/>
+                badge<input type="number" min="0" max="10" step="1" id="b_input"
+                            name="badge" placeholder="3" ng-model="formData.badge"/>
+                <br/>
+                custom field
+                <input type="text" placeholder="key" name="k" id="c_input1" ng-model="formData.k"/>
+                <input type="text" placeholder="field" name="field" id="c_input2" ng-model="formData.field"/>
+                <button id="plus_sign" type="button">Plus</button>
+                <br/>
+                <button type="submit" id="send">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
