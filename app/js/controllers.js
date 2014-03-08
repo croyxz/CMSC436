@@ -12,7 +12,7 @@ pushNotify.controller('InfoTools', function ($scope, $http) {
     };
 
     $scope.postForm = function () {
-        $http.post('*', {"recipient": $scope.formData.recipient, "badge": $scope.formData.badge,
+        $http.post('/recipient', {"recipient": $scope.formData.recipient, "badge": $scope.formData.badge,
             "k": $scope.formData.k, "field": $scope.formData.field}).success(function (data) {
                 console.log("OK", data)
             }).error(function (err) {
