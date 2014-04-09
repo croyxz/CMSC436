@@ -1,0 +1,95 @@
+#get_pos {
+    margin-left: 150px;    
+}
+
+#put_pos {
+    margin-left: 150px;
+}
+
+#get {
+    background-color: white;
+    box-shadow: 3px 3px 0px 0px rgba(0,0,0,1);
+}
+
+#put {
+    background-color: white;
+    box-shadow: 3px 3px 0px 0px rgba(0,0,0,1);
+}
+
+.container-fluid {
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    border-style: solid;
+    margin-top: 5px;
+    background-color: lightgray;
+}
+
+.pull-left {
+    border-style: solid;
+    float: left;
+    padding-right: 420px;
+}
+
+
+.left {
+    margin-top: 20px;
+    height: 120px;
+    float: left;
+}
+
+#recipient {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+#badge {
+    margin-left: 10px;
+}
+
+
+#custom_field {
+    margin-left: 10px;
+}
+
+#r_input {
+    margin-left: 30px;
+}
+
+#b_input {
+    margin-left: 100px;
+    width: 30px;
+}
+
+#c_input1 {
+    margin-left: 60px;
+    width: 120px;
+}
+
+#c_input2 {
+    margin-left: 60px;
+    width: 120px;
+}
+
+#plus_sign {
+    margin-left: 80px;
+
+}
+
+#post {
+    margin-left: 100px;
+    margin-bottom: 100px;
+    margin-top: 320px;
+    background-color: white;
+    box-shadow: 3px 3px 0px 0px rgba(0,0,0,1);
+}
+
+
+
+
